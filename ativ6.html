@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 6</title>
+</head>
+<body>
+    <h1> ganhou ou não ganhou? função SE</h1>
+    <div id="resultado"></div>
+    <script>
+        let vendas = Number(prompt("digite o total de vendas desse funcionario"))
+        let meta = Number(prompt("digite a meta  desse funcionario a ser alcançada"))
+        let resul;
+
+        if(vendas>meta){
+            resul = "ganhou!!!"
+        }else{
+            resul = "não ganhou!"
+        }
+
+
+        document.getElementById("resultado").innerHTML = "total vendas: " + vendas + "</br>meta: " + meta + "<br>" + resul;
+
+    </script>
+    
+</body>
+</html>
